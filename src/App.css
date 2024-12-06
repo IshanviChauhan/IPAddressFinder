@@ -1,0 +1,159 @@
+/* Importing Pacifico font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* General Reset and Box Sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main App Container */
+.App {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f7fa; /* Light background for better contrast */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Content Container */
+.left {
+  box-sizing: border-box;
+  padding-left: 40px;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Map Styling */
+.map {
+  width: 100%;
+  max-width: 450px;
+  height: 350px;
+  border: 4px solid #1453dc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.map:hover {
+  transform: scale(1.02); /* Hover effect for map */
+}
+
+/* Marker Styling */
+.mark {
+  padding: 40px;
+  border-radius: 50%;
+  background-color: #d2d8fabe;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Style */
+.heading {
+  font-size: 60px;
+  text-align: center;
+  text-decoration: underline;
+  font-family: 'Pacifico', cursive;
+  color: #1453dc;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Added text shadow for better visibility */
+}
+
+/* Paragraph Text Style */
+p {
+  font-size: 18px;
+  color: #1453dcaf;
+  line-height: 1.6;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+/* IP Address Style */
+#ip {
+  color: #1453dc;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .App {
+    height: auto;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .left {
+    padding-left: 20px;
+    width: 100%;
+  }
+
+  .map {
+    height: 300px;
+  }
+
+  .heading {
+    font-size: 48px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  #ip {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 36px;
+  }
+
+  .left {
+    padding-left: 10px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  #ip {
+    font-size: 1.8rem;
+  }
+}
+
+/* Loading and Error State */
+.loading,
+.error {
+  font-size: 1.5rem;
+  color: #1453dc;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.error {
+  color: red;
+}
+
+/* Small button for refreshing or retrying actions (if needed) */
+button {
+  background-color: #1453dc;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0e3e97;
+}
