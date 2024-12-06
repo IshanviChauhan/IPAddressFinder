@@ -23,7 +23,7 @@ const Map = ({ lat, lon }) => {
   return (
     <ReactMapGL
       {...viewport}
-      mapboxAccessToken="pk.eyJ1IjoiaXNoYW52aTciLCJhIjoiY200Y3RtZGc5MGJpYTJrcGY1b3Y3aGp6MSJ9.DxzNHbwil_w69GnWHX58pg"
+      mapboxAccessToken="<YOUR API KEY>"
       mapStyle="mapbox://styles/mapbox/streets-v11"
       onViewportChange={(newViewport) => setViewport(newViewport)}
     />
