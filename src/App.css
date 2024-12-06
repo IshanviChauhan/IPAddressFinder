@@ -1,11 +1,9 @@
-/* Importing Pacifico font from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-
 /* General Reset and Box Sizing */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Main App Container */
@@ -55,8 +53,6 @@
 .heading {
   font-size: 60px;
   text-align: center;
-  text-decoration: underline;
-  font-family: 'Pacifico', cursive;
   color: #1453dc;
   margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Added text shadow for better visibility */
